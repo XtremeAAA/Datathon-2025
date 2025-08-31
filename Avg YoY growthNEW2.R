@@ -42,8 +42,6 @@ resort_trends <- resort_yearly_long %>%
 
 print(resort_yoy)
 
-print(resort_summary)
-
   # Merging trend back into summary 
 resort_summary <- resort_yoy %>%
   group_by(Resort) %>%
@@ -53,17 +51,6 @@ resort_summary <- resort_yoy %>%
   ) %>%
   left_join(resort_trends, by = "Resort") %>%
   arrange(desc(trend_coef))  # rank by "up and coming"
-
-# Plotting visitation trends over time 
-ggplot(resort_yearly_long, aes(x = Year, y = Total_Visitors, color = Resort)) +
-  geom_line(size = 1.2) +
-  geom_point() +
-  labs(
-    title = "Year-on-Year Visitation Trends by Resort (Excl. 2020–2021)",
-    x = "Year",
-    y = "Total Visitors"
-  ) +
-  theme_minimal()
 
 # Recomputing trends with percentage growth
 resort_trends_pct <- resort_yearly_long %>%
