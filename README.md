@@ -9,9 +9,9 @@
 
 ## Project Overview
 
-This project analyzes ski resort visitation and climate data from 2010–2024, focusing on the relationship between weather and weekly visitor numbers at various Australian ski locations.
+This project analyses ski resort visitation and climate data from 2010–2024, focusing on the relationship between weather and weekly visitor numbers at various Australian ski locations.
 
-The repository contains R and Python scripts for data analysis, visualization, and reporting.
+The repository contains R and Python scripts for data analysis, visualisation, and reporting.
 
 ---
 
@@ -47,7 +47,7 @@ The repository contains R and Python scripts for data analysis, visualization, a
 ### Python
 
 - **weather.py**  
-  Visualizes rainfall and visitor numbers by week and year for each resort.  
+  Visualises rainfall and visitor numbers by week and year for each resort.  
   - Plots rainfall as bars and visitors as a line (with optional log/sqrt transformation).
   - Supports ENSO phase background coloring.
   - Subplots for each year, grouped by resort.
@@ -56,11 +56,11 @@ The repository contains R and Python scripts for data analysis, visualization, a
 ### R
 
 - **Avg YoY growthNEW2.R**  
-  Calculates and visualizes average year-over-year growth in visitation.
+  Calculates and visualises average year-over-year growth in visitation.
 - **ProximitySpiderChart.R**  
   Creates a spider chart for city proximity to resorts.
 - **TotalVisitorsperResort.R**  
-  Summarizes total visitors per resort.
+  Summarises total visitors per resort.
 
 ---
 
