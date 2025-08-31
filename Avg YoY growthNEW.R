@@ -1,6 +1,8 @@
 library(dplyr)
 library(ggplot2)
 
+ski_data <- read.csv("Book1.csv")
+
 # Removing COVID years 
 ski_clean <- ski_data %>%
   filter(!Year %in% c(2020, 2021))
